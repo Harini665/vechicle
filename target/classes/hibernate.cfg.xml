@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/vechicle_rescue
+        </property>
+
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <property name="hibernate.connection.password">
+            Root@123
+        </property>
+
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
+
+        <property name="hibernate.show_sql">
+            false
+        </property>
+
+        <mapping class="com.vechicle.rescue.entity.Customer"/>
+        <mapping class="com.vechicle.rescue.entity.Vehicle"/>
+        <mapping class="com.vechicle.rescue.entity.BreakdownRequest"/>
+        <mapping class="com.vechicle.rescue.entity.Mechanic"/>
+        <mapping class="com.vechicle.rescue.entity.Assignment"/>
+        <mapping class="com.vechicle.rescue.entity.Payment"/>
+        <mapping class="com.vechicle.rescue.entity.ServiceHistory"/>
+
+    </session-factory>
+
+</hibernate-configuration>
